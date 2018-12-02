@@ -11,7 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta property="og:url" content="{{ env('APP_URL')  }}"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Rescue"/>
-<meta property="og:description" content="Rescue provides comprehensive behavior change marketing programs. We begin with our proprietary formative research process, Peer Science™."/>
+<meta property="og:title" content="Gerardo Soto"/>
+<meta property="og:description" content="Gerardo Soto gsoto@gcodeon.me"/>
 <meta property="og:image" content="Image Here"/>
-<title>Rescue</title>
+<title>Gcodeon</title>
