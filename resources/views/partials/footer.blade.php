@@ -13,9 +13,9 @@
                                 Copyright © 2018 Gerardo Soto <br>All Rights Reserved.
                             </small>
                         </div>
-                        <div class="cell medium-1 small-12">
+                        <!-- <div class="cell medium-1 small-12">
                             <img class="b-cert" src="{{asset('images/b-cert-logo.svg')}}" alt="">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

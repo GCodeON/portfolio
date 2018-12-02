@@ -63,7 +63,8 @@
                 </div>
                 <div class="title-bar-right">
                     <button class="mobile-menu-close close-button" aria-label="Close reveal" type="button" data-close="mobile-menu">
-                        <img src="{{asset('images/close-button.svg')}}" alt="close modal">
+                        <!-- <img src="{{asset('images/close-button.svg')}}" alt="close modal"> -->
+                        @include('partials.close-button-svg')
                     </button>
                 </div>
             </div>

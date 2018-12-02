@@ -23,7 +23,7 @@ $menu-font-family : $button-font-family;
     .close-button {
         outline  : none;
         position : static;
-        img {
+        svg {
             height : 40px;
         }
     }
@@ -82,11 +82,11 @@ $menu-font-family : $button-font-family;
         display   : inline-block;
         font-size : 43px;
         width     : 62px;
-        img {
+        svg {
             transition: transform .3s ease-in-out;
         }
         &:hover {
-            img {
+            svg {
                 transform: scale(1.2);
             }
 
@@ -114,6 +114,11 @@ $menu-font-family : $button-font-family;
         height         : 100%;
         text-transform : uppercase;
         max-width      : $global-width;
+
+        svg {
+            fill       : white;
+
+        }
 
         .title-bar-left {
             max-width : 50px;
@@ -201,7 +206,7 @@ $menu-font-family : $button-font-family;
     ul.menu {
         text-align : center;
         @include breakpoint(small only) {
-            margin-bottom: 6vh;
+            margin-bottom: 15vh;
         }
 
         > li a {
