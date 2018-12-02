@@ -1,0 +1,60 @@
+body.home {
+    header {
+        display    : flex;
+        min-height : calc(100vh - 75px);
+        position   : relative;
+        padding    : 4rem 0 1rem 0;
+
+        /* ie fix for flex */
+        //height     : 1px;
+
+        @include breakpoint(medium) {
+            min-height : calc(100vh - 130px);
+        }
+
+        .header-child {
+            height : 100%;
+        }
+
+        .header-media {
+            margin-bottom : 2rem;
+        }
+
+        .header-body {
+            .banner {
+                margin-bottom : 1rem;
+            }
+        }
+
+    }
+
+    .carousel-wrap {
+        margin-top : 4rem;
+    }
+
+    .home-bg {
+        background      : url('/images/home-header-bg.png') no-repeat;
+        background-size : cover;
+        z-index         : 0;
+        &::before {
+            content             : '';
+            background-image    : url(/images/home-header-bg-gradient.png);
+            background-size     : cover;
+            background-position : center right;
+            background-repeat   : no-repeat;
+            position            : absolute;
+            z-index             : -1;
+            left                : 0;
+            width               : 71%;
+            top                 : 0;
+            height              : 100%;
+        }
+    }
+
+    .content {
+        overflow : hidden;
+        @include breakpoint(large) {
+            overflow : visible;
+        }
+    }
+}

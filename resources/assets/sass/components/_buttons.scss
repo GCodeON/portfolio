@@ -1,0 +1,35 @@
+
+button,
+.button {
+    text-transform : uppercase;
+
+    @include breakpoint(small only) {
+        font-size : 12px;
+
+        &.large {
+            font-size : 14px;
+        }
+    }
+}
+
+button[type=button] {
+    cursor : pointer;
+}
+
+.btn-cta {
+	border     : 1px solid get-color(primary);
+	padding    : 12px;
+	transition : transitions(background, transform, color, font-size);
+    font-size  : 0.9em;
+
+    @include breakpoint(medium) {
+        font-size : 1em;
+    }
+}
+
+.btn-cta:hover {
+	transform  : scale(1.05);
+	background : get-color(primary);
+	color      : #000;
+}
+

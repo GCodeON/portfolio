@@ -1,0 +1,76 @@
+
+.info-window {
+    max-width      : 300px;
+    padding-top    : $global-padding;
+    padding-bottom : $global-padding;
+    @include breakpoint(medium) {
+        max-width : 400px;
+    }
+    text-align     : left;
+    .title {
+        text-transform : uppercase;
+        font-size      : 18px;
+        color          : get-color(secondary);
+        font-family    : $base-font-family;
+        font-weight    : bold;
+        margin-bottom  : 1rem;
+    }
+
+    .details {
+        margin-bottom : 1rem;
+        font-size     : 16px;
+    }
+
+}
+
+.location-finder {
+    .stacked-input-group-small {
+        @include breakpoint(small only) {
+            flex-wrap : wrap;
+            > input,
+            .input-group-button {
+                flex : 0 0 100%;
+
+                .button {
+                    border-radius : $button-radius;
+                    margin-top    : .5rem;
+                    height        : 50px;
+                }
+            }
+        }
+    }
+
+    .input-group-button {
+        margin : 0 0 0 10px;
+        .button {
+            border-radius : 5px;
+        }
+    }
+    .input-column {
+        padding-left : 0;
+    }
+}
+
+.map-container {
+    width  : 100%;
+    //width: 90%;
+    margin : 0 auto;
+    @include breakpoint(medium) {
+        //width: 100%;
+        //margin-top: -80px;
+        //margin-bottom: 70px;
+    }
+
+}
+
+#map {
+    width  : 100%;
+    height : 400px;
+    @include breakpoint(medium) {
+        height : 600px;
+    }
+
+}
+
+
+

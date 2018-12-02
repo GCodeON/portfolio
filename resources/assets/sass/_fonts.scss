@@ -1,0 +1,27 @@
+@include font-face(
+        $name : 'GothamMedium',
+        $path : 'https://s3-us-west-1.amazonaws.com/rescue-web-services/fonts/Gotham-Medium',
+        $weight : null,
+        $exts : woff
+);
+
+@include font-face(
+        $name : 'GothamBook',
+        $path : 'https://s3-us-west-1.amazonaws.com/rescue-web-services/fonts/Gotham-Book',
+        $weight : null,
+        $exts : woff
+);
+
+@include font-face(
+        $name : 'GothamBold',
+        $path : 'https://s3-us-west-1.amazonaws.com/rescue-web-services/fonts/Gotham-Bold',
+        $weight : null,
+        $exts : woff
+);
+
+@include font-face(
+        $name : 'GothamLight',
+        $path : 'https://s3-us-west-1.amazonaws.com/rescue-web-services/fonts/Gotham-Light',
+        $weight : null,
+        $exts : woff
+);

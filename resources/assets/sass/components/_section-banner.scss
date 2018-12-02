@@ -1,0 +1,31 @@
+.section-banner {
+    text-transform : uppercase;
+    .pre-title {
+        @extend .gotham-medium;
+        font-size : 16px;
+        @include breakpoint(medium) {
+            font-size : 24px;
+
+        }
+    }
+    .title {
+        font-size : 32px;
+        @include breakpoint(large) {
+            font-size : 70px;
+        }
+    }
+
+    hr {
+        border-width : 4px;
+        border-color : get-color(primary);
+        width : 80px;
+        @include breakpoint(medium) {
+            width : 140px;
+        }
+    }
+
+    margin-bottom: 2rem;
+    @include breakpoint(medium) {
+        margin-bottom: 5rem;
+    }
+}

@@ -1,0 +1,122 @@
+.content {
+    min-height : 100vw;
+    @include breakpoint(medium) {
+        min-height : 60vh;
+    }
+}
+
+.no-scroll {
+    overflow : hidden;
+}
+
+.min-height-100 {
+    min-height : 100vh;
+}
+
+.highlight-text {
+    position : relative;
+    z-index  : 0;
+    &::before {
+        content       : '';
+        border-bottom : 4px solid #B0FF00;
+        position      : absolute;
+        width         : 80%;
+        left          : 10%;
+        z-index       : -1;
+        @include vertical-center();
+    }
+    &.full {
+        &::before {
+            left  : 0 !important;
+            width : 100% !important;
+        }
+    }
+
+}
+
+.vertical-rl {
+    writing-mode : vertical-rl;
+}
+
+.absolute-full {
+    position : absolute;
+    height   : 100%;
+    width    : 100%;
+}
+
+hr.vertical {
+    border      : none;
+    border-left : 1px solid;
+    height      : 2rem;
+    width       : 1px;
+}
+
+@keyframes shake-a-fist {
+    0%, 100% {
+        transform : rotate(-45deg);
+    }
+
+    50% {
+        transform : rotate(45deg);
+    }
+
+}
+
+.swipe-animation {
+    animation-name            : shake-a-fist;
+    animation-duration        : 1.5s;
+    animation-delay           : 2s;
+    animation-timing-function : ease-in-out;
+    animation-iteration-count : infinite;
+}
+
+section {
+    &.full {
+        min-height          : 100vh;
+        padding             : 2rem 0;
+        @include breakpoint(medium) {
+            padding         : 4rem 0;
+        }
+    }
+
+    &.light-bg {
+        background-color    : #F7F9FA;
+    }
+
+    &.dark-bg {
+        color               : white;
+        background-color    : #272A2C;
+    }
+
+    &.half-bg {
+        background          : linear-gradient(180deg, #F7F9FA 65%, $black 65%);
+    }
+}
+
+.bg-gray-gradient {
+    background-color        : #383C40;
+}
+
+.padding-main {
+    padding                 : 2rem 0;
+    @include breakpoint(medium) {
+        padding             : 4rem 0;
+    }
+}
+
+.position-relative {
+    position                : relative;
+}
+.reveal-body {
+    margin-top              : 2em;
+    @include breakpoint(large) {
+        padding             : 2rem 10rem 20rem 10rem;
+        .responsive-embed iframe {
+            height          : 75%;
+        }
+     }
+}
+.slick-slide {
+    outline                 : none;
+}
+

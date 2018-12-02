@@ -1,0 +1,33 @@
+// Settings
+@import "mixins";
+@import "functions";
+@import "fonts";
+@import "variables";
+@import "settings";
+@import "typography";
+// Foundation
+@import "../../../node_modules/foundation-sites/scss/foundation";
+// @include foundation-everything();
+@include foundation-everything(true, true);
+//@import "foundation-base";
+@import "../../../node_modules/motion-ui/motion-ui";
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+// Custom building blocks for foundation
+@import "./building-blocks/blocks";
+
+
+@import "cms";
+@import "menu";
+@import "admin";
+@import "layout";
+@import "footer";
+
+// Partials
+@import "partials/hero";
+
+// Pages
+@import "pages/home";
+
+

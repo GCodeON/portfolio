@@ -1,0 +1,44 @@
+.media-reel {
+    margin-top  : 35px;
+    white-space : nowrap;
+    text-align  : center;
+
+    .slick-arrow {
+        display : none;
+    }
+
+    .media {
+        display     : inline-block;
+        white-space : normal !important;
+        padding     : 0px 5px 0px 5px;
+        position    : relative;
+        max-width   : 300px;
+        @include breakpoint(small only) {
+            min-height  : 150px;
+        }
+        min-height  : 185px;
+
+        img.videoThumbnail {
+            width  : 100%;
+            border : none;
+        }
+
+        img.btn-play {
+            width    : 25px;
+            position : absolute;
+            top      : -70px;
+            right    : 0;
+            bottom   : 0;
+            left     : 0;
+            margin   : auto;
+        }
+
+        p {
+            font-size      : 0.7em;
+            text-transform : uppercase;
+            text-align     : center;
+            line-height    : 20px;
+            margin-top     : 15px;
+        }
+    }
+}

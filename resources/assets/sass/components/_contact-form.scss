@@ -1,0 +1,67 @@
+.contact-form {
+	label {
+		text-transform : uppercase;
+		margin-bottom  : 10px;
+		span {
+			transition: transitions(margin-left);
+			@include breakpoint(large) {
+				margin-left : 57px;
+			}
+		}
+	}
+
+	input[type="name"],
+	input[type="email"],
+	input[type="phone"],
+	select,
+	textarea {
+		width      : 100%;
+		padding    : 0px 10px 0px 10px;
+		margin     : 0px 0px 15px 0px;
+		height     : 40px;
+		border     : 1px solid rgb(216, 216, 216);
+		box-shadow : none;
+		transition : transitions(width, margin-bottom);
+
+		@include breakpoint(medium) {
+			margin-bottom : 30px;
+		}
+
+		@include breakpoint(large) {
+			width : 90%;
+		}
+	}
+
+	textarea {
+		height : 300px;
+		width  : 100%;
+	}
+
+	img {
+		float: left;
+	}
+
+	.profile-information {
+		p {
+			font-size   : 0.6em;
+			left        : 15px;
+			position    : relative;
+		}
+	}
+
+	.email-subscription {
+		font-size : 0.8em;
+	}
+
+	.button {
+		border-radius : 2px;
+		padding       : 20px 40px 20px 40px;
+		box-shadow    : 0px 10px 20px rgba(0, 0, 0, 0.16);
+	}
+
+	.float-right {
+		@include breakpoint(medium) {
+			float : right;
+		}
+	}
+}

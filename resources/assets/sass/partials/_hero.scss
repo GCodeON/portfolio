@@ -1,0 +1,148 @@
+.hero {
+	height              : auto;
+	position            : relative;
+    padding             : 6rem 0 1rem 0;
+    background          : $black;
+    background-size     : cover;
+    background-position : 50% 50%;
+    transition          : transitions(padding);
+
+    @include breakpoint(medium) {
+        padding             : 4rem 0 4rem 0;
+        background-position : 120vw 50%;
+    }
+    // @include breakpoint(small only) {
+    //     .buffer {
+    //         height: 25vh;
+    //     }
+    // }
+    .overlay {
+        width      : 100vw;
+        position   : absolute;
+        height     : 234px;
+        bottom     : 0px;
+        background : $black;
+
+    	@include breakpoint(medium) {
+    		display    : block;
+            width      : 60vw;
+            height     : 100%;
+            margin-top : 0;
+            z-index    : 1;
+    	}
+
+        @include breakpoint(large) {
+            width : 55vw;
+        }
+
+    	div {
+            width         : 100%;
+            height        : 100%;
+            position      : absolute;
+            @include breakpoint(small only) {
+                bottom    : 233px;
+            }
+
+            @include breakpoint(medium) {
+                width     : 150px;
+                display   : block;
+                right     : -150px;
+            }
+
+            svg {
+                width     : 100%;
+                height    : 100%;
+                polygon {
+                    fill  : $black;
+                }
+            }
+    	}
+    }
+
+    .hero-container {
+        z-index : 2;
+
+        @include breakpoint(medium) {
+            position : static;
+            bottom   : auto;
+        }
+
+        .hero-content {
+
+            @include breakpoint(medium) {
+                position : relative;
+                bottom   : auto;
+            }
+
+            h2,
+            p {
+                color       : #FFFFFF;
+            }
+
+            h2 {
+                white-space : nowrap;
+                transition  : transitions(font-size);
+            }
+
+            hr {
+                width         : 60px;
+                height        : 0px;
+                border-bottom : 5px solid get-color(primary);
+                border-radius : 2px;
+                margin-left   : 0px;
+                transition    : transitions(width);
+
+                @include breakpoint(medium) {
+                    width     : 100px;
+                }
+            }
+
+            .description {
+                margin-top    : 45px;
+                margin-bottom : 45px;
+                transition    : transitions(margin-bottom, font-size);
+
+                @include breakpoint(medium) {
+                    margin-bottom : 60px;
+                }
+            }
+
+            .project-type-icons {
+                text-align    : left;
+                margin-left   : 0px;
+                margin-bottom : 2rem;
+                margin-top    : -25px;
+                transition    : transitions(margin-top);
+
+                @include breakpoint(medium) {
+                    text-align : right;
+                    margin-top : -60px;
+                }
+
+                li {
+                    display    : inline-block;
+
+                    img {
+                        width : 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.project {
+        .overlay {
+            @include breakpoint(small) {
+                width      : 100vw;
+                height     : 100%;
+                position   : absolute;
+                background : linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(50, 51, 52, 0.9));
+                margin-top : 0;
+
+                div {
+                    display : none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+
+body.admin {
+    h1 {
+        font-size: 35px;
+    }
+
+    .title-bar {
+        a {
+            color: black;
+        }
+
+        .title-bar-right {
+            .menu {
+                justify-content:flex-end;
+            }
+        }
+    }
+
+    #mobileMenu {
+        a {
+            color: black;
+        }
+        display:none;
+        &.open {
+            display:block;
+        }
+    }
+}

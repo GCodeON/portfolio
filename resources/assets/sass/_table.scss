@@ -1,0 +1,42 @@
+table {
+    th {
+        a.selected {
+            &.desc {
+                &:after {
+                    content                 : "\f0de";
+                    font-family             : FontAwesome;
+                    speak                   : none;
+                    display                 : inline-block;
+                    padding                 : 0;
+                    top                     : 5px;
+                    left                    : 4px;
+                    line-height             : 10px;
+                    position                : relative;
+                    vertical-align          : top;
+                    -webkit-font-smoothing  : antialiased;
+                    -moz-osx-font-smoothing : grayscale;
+                    text-decoration         : none !important;
+                    color                   : #444;
+                }
+            }
+            &.asc {
+                &:after {
+                    content                 : "\f0dd";
+                    font-family             : FontAwesome;
+                    speak                   : none;
+                    display                 : inline-block;
+                    padding                 : 0;
+                    top                     : -3px;
+                    left                    : 4px;
+                    line-height             : 10px;
+                    position                : relative;
+                    vertical-align          : top;
+                    -webkit-font-smoothing  : antialiased;
+                    -moz-osx-font-smoothing : grayscale;
+                    text-decoration         : none !important;
+                    color                   : #444;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+// =============================================================================
+// Super Damn Cool Transitions
+// =============================================================================
+
+@function transitions($properties...) {
+    $transition : "";
+    $newTransition : "";
+
+    @each $property in $properties {
+    	$newTransition : $property + " " + $transition-duration + " ease-in-out, ";
+    	$transition : $transition + $newTransition;
+    }
+
+    @return unquote($transition);
+}
