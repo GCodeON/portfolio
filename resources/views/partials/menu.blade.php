@@ -97,12 +97,12 @@
                 </div>
                 <ul class="menu icons align-center">
                     <li>
-                        <a href="">
+                        <a href="{{ $globals['github_url'] }}" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="{{ $globals['linkedin_url'] }}" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
                     </li>
