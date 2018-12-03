@@ -75,6 +75,9 @@
         }
         a {
             font-size : 40px;
+            &:hover {
+                transform: scale(1.2);
+            }
             //padding   : 0 1rem;
         }
     }

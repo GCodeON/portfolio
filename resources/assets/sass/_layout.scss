@@ -1,7 +1,10 @@
 .content {
     min-height : 85vw;
     @include breakpoint(medium) {
-        min-height : 60vh;
+        min-height : 56vh;
+    }
+    @include breakpoint(xxlarge) {
+        min-height : 65vh;
     }
 }
 

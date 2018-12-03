@@ -18,6 +18,7 @@ Vue.config.silent = true;
 require('foundation-sites');
 require('lodash');
 require('slick-carousel');
+require('scrollmagic');
 
 let youtubeModal = require('./youtube-iframe'),
     slick = require('./slick-custom'),
@@ -30,7 +31,7 @@ let youtubeModal = require('./youtube-iframe'),
  */
 
 
-// Vue.component('carousel-timeline', require('./components/CarouselTimeline.vue'));
+Vue.component('section-wipes', require('./components/SectionWipes.vue'));
 
 const app = new Vue({
     el: '#myApp'
