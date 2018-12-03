@@ -32,25 +32,6 @@ body.home {
         margin-top : 4rem;
     }
 
-    .home-bg {
-        background      : url('/images/home-header-bg.png') no-repeat;
-        background-size : cover;
-        z-index         : 0;
-        &::before {
-            content             : '';
-            background-image    : url(/images/home-header-bg-gradient.png);
-            background-size     : cover;
-            background-position : center right;
-            background-repeat   : no-repeat;
-            position            : absolute;
-            z-index             : -1;
-            left                : 0;
-            width               : 71%;
-            top                 : 0;
-            height              : 100%;
-        }
-    }
-
     .content {
         overflow : hidden;
         @include breakpoint(large) {

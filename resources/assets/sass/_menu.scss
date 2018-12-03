@@ -1,4 +1,4 @@
-$menu-link-color : #000000;
+$menu-link-color : white;
 $menu-font-family : $button-font-family;
 
 .menu-hover-highlight {
@@ -6,7 +6,7 @@ $menu-font-family : $button-font-family;
 }
 
 #menu {
-    color: get-color(secondary);
+    color: white;
     position : relative;
     height   : 75px;
     @include breakpoint(medium) {
@@ -63,6 +63,7 @@ $menu-font-family : $button-font-family;
     }
 
     .mobile-menu-open {
+        color: white;
         position : relative;
         &::after {
             content       : '';
@@ -75,7 +76,7 @@ $menu-font-family : $button-font-family;
         }
         //padding       : 0 0 3px 0;
         //border-bottom : 2px solid $black;
-        @include link-color($black, scale_color(get-color(primary), $lightness: -60%));
+        // @include link-color($black, scale_color(get-color(primary), $lightness: -60%));
     }
 
     .mobile-menu-close {
@@ -129,7 +130,7 @@ $menu-font-family : $button-font-family;
             a {
                 font-family : $menu-font-family;
                 font-size   : 18px;
-                color       : #000000;
+                color       : white;
                 position    : relative;
                 //color     : $titlebar-color;
                 &:hover {
@@ -150,7 +151,7 @@ $menu-font-family : $button-font-family;
             > li {
                 > a {
                     font-size : 10px;
-                    color     : $black;
+                    color     : white;
 
                 }
 

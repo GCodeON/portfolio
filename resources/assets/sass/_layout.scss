@@ -18,7 +18,7 @@
     z-index  : 0;
     &::before {
         content       : '';
-        border-bottom : 4px solid #B0FF00;
+        border-bottom : 4px solid get-color(primary);
         position      : absolute;
         width         : 80%;
         left          : 10%;
