@@ -234,7 +234,7 @@ $menu-font-family : $button-font-family;
             padding     : 5px 20px;
             transition  : color .5s ease;
             line-height : 60px;
-            &:hover {
+            &:hover, &:focus, &:active {
                 color : get-color(primary);
             }
 
