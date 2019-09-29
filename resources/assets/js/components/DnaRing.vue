@@ -698,7 +698,7 @@
 <style  lang="scss" scoped>
 
     #dna-ring {
-		width: 200px;
+		width : 200px;
 		margin: 0 auto;
 			#Vector {
 				display: none;
