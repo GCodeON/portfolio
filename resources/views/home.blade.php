@@ -2,4 +2,5 @@
 
 @section ('content')
     <!-- <section-wipes></section-wipes> -->
+    <side-menu></side-menu>
 @stop
