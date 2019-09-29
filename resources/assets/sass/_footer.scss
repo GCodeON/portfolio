@@ -36,6 +36,7 @@
     ul.menu {
         li {
             text-transform : capitalize;
+            display: inline-block;
             &.header {
                 text-transform : uppercase;
                 font-weight    : bold;

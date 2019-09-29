@@ -7,15 +7,12 @@
 
                         <div class="cell medium-11 small-12 align-self-bottom">
                             <div class="contact-info">
-                            <br> GerardoSoto@gcodeon.me
+                            <br> gsoto@gcodeon.dev
                             </div>
                             <small class="copyright">
-                                Copyright © 2018 Gerardo Soto <br>All Rights Reserved.
+                                Copyright © 2019 GCodeOn <br>All Rights Reserved.
                             </small>
                         </div>
-                        <!-- <div class="cell medium-1 small-12">
-                            <img class="b-cert" src="{{asset('images/b-cert-logo.svg')}}" alt="">
-                        </div> -->
                     </div>
                 </div>
             </div>

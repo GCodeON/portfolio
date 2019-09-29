@@ -11,28 +11,22 @@ return [
    */
     'menu' => [
         [
-            'name' => 'Projects',
-            'url'  => '/projects',
-        ],
-        [
             'name' => 'About',
             'url'  => '/about',
         ],
         [
-            'name' => 'Blog',
-            'url'  => '/about',
+            'name' => 'Projects',
+            'url'  => '/projects',
         ],
         [
-            'name' => 'CV',
-            'url'  => '/cv',
+            'name' => 'Blog',
+            'url'  => '/about',
         ]
-
-
     ],
     "sub_menu" => [
         [
-            'name' => 'Contact',
-            'url'  => '/contact',
+            'name' => 'Data',
+            'url'  => '/data',
         ],
         [
             'name' => 'Software',
@@ -41,10 +35,6 @@ return [
         [
             'name' => 'Design',
             'url'  => '/design',
-        ],
-        [
-            'name' => 'Services',
-            'url'  => '/services',
         ]
     ],
 

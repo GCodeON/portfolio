@@ -1,13 +1,3 @@
-.content {
-    min-height : 85vw;
-    @include breakpoint(medium) {
-        min-height : 56vh;
-    }
-    @include breakpoint(xxlarge) {
-        min-height : 65vh;
-    }
-}
-
 .no-scroll {
     overflow : hidden;
 }
