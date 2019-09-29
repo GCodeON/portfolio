@@ -1,11 +1,12 @@
 <template>
     <div class="github-container">
 		<div class="user">
+			<dna-ring></dna-ring>
 			<img class="user-image" 
 				:src="user.avatar_url">
 			<br>
 			<div class="details">
-				<p>{{ user.name }}</p>
+				<p class="username">{{ user.name }}</p>
 				<p>{{ user.login }}</p>
 				<p>{{ user.location }}</p>
 				<!-- <p>{{ user.bio }}</p> -->
@@ -64,26 +65,30 @@
 </script>
 
 <style  lang="scss" scoped>
+	.github-container {
+		text-align: center;
+		position  : relative;
 
-.user-image {
-	border-radius: 100px;
-	width        : 6em;
-	z-index      : 2;
-	position     : relative;
-}
-.github-container {
-	text-align: center;
-}
+		.user-image {
+			    border-radius: 100px;
+			    width        : 125px;
+			    z-index      : 2;
+			    position     : absolute;
+			    left         : 0;
+			    top          : 36px;
+			    right        : 0;
+			    bottom       : 0;
+			    margin       : 0 auto;
+		}
+	}
 
-.details {
-	// background: white;
-	// color     : black;
-	margin       : 2em;
-	padding      : 4em 2em;
-	transform    : translateY(-75px);
-	border-radius: 50px;
-	width        : 75vw;
-	margin       : 0 auto;
-}
+	.details {
+		padding: 2em;
+		width  : 75vw;
+		margin : 0 auto;
+		.username {
+			text-transform: uppercase;
+		}
+	}
     
 </style>
