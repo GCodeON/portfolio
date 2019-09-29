@@ -32,7 +32,7 @@ let youtubeModal = require('./youtube-iframe'),
 
 
 Vue.component('section-wipes', require('./components/SectionWipes.vue'));
-Vue.component('side-menu', require('./components/SideMenu.vue'));
+Vue.component('github-user', require('./components/GithubUser.vue'));
 
 const app = new Vue({
     el: '#myApp'

@@ -1,15 +1,15 @@
 <template>
-    <div>
-		<div>
-			<img class="user-image" :src="user.avatar_url">
-			{{ user.name }}
+    <div class="github-container">
+		<div class="user">
+			<img class="user-image" 
+				:src="user.avatar_url">
 			<br>
-			{{ user.login }}
-			<br>
-			{{ user.location }}
-			<br>
-			{{ user.bio }}
-		
+			<div class="details">
+				<p>{{ user.name }}</p>
+				<p>{{ user.login }}</p>
+				<p>{{ user.location }}</p>
+				<!-- <p>{{ user.bio }}</p> -->
+			</div>
 		</div>
 	</div>
 </template>
@@ -20,9 +20,14 @@
 	var vue;
 
     export default {
-        name   : "name",
+        name   : "Github User",
         components: {},
-        props: [],
+        props: {
+			username : {
+				type: String,
+				default: 'GCodeOn'
+			}
+		},
         data() {
 			vue = this;
             return {
@@ -39,7 +44,7 @@
         watch: {},
         methods: {
 			getUser: () => {
-				axios.get('https://api.github.com/users/GCodeOn')
+				axios.get(`https://api.github.com/users/${vue.username}`)
 				.then(function (response) {
 					// handle success
 					console.log(response);
@@ -62,7 +67,23 @@
 
 .user-image {
 	border-radius: 100px;
-    width: 6em;
+	width        : 6em;
+	z-index      : 2;
+	position     : relative;
+}
+.github-container {
+	text-align: center;
+}
+
+.details {
+	// background: white;
+	// color     : black;
+	margin       : 2em;
+	padding      : 4em 2em;
+	transform    : translateY(-75px);
+	border-radius: 50px;
+	width        : 75vw;
+	margin       : 0 auto;
 }
     
 </style>
