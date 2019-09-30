@@ -132,7 +132,8 @@
     }
     .links {
         @include breakpoint(small only) {
-            margin: -31px 33%;
+            margin : 0 auto;
+            display: table;
         }
     }
 
