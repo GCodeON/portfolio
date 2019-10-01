@@ -44,25 +44,6 @@ hr.vertical {
     width       : 1px;
 }
 
-@keyframes shake-a-fist {
-    0%, 100% {
-        transform : rotate(-45deg);
-    }
-
-    50% {
-        transform : rotate(45deg);
-    }
-
-}
-
-.swipe-animation {
-    animation-name            : shake-a-fist;
-    animation-duration        : 1.5s;
-    animation-delay           : 2s;
-    animation-timing-function : ease-in-out;
-    animation-iteration-count : infinite;
-}
-
 section {
     &.full {
         min-height          : 100vh;
@@ -90,26 +71,9 @@ section {
     background-color        : #383C40;
 }
 
-.padding-main {
-    padding                 : 2rem 0;
-    @include breakpoint(medium) {
-        padding             : 4rem 0;
-    }
+i {
+    font-style: normal;
 }
 
-.position-relative {
-    position                : relative;
-}
-.reveal-body {
-    margin-top              : 2em;
-    @include breakpoint(large) {
-        padding             : 2rem 10rem 20rem 10rem;
-        .responsive-embed iframe {
-            height          : 75%;
-        }
-     }
-}
-.slick-slide {
-    outline                 : none;
-}
+
 

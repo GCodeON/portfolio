@@ -1,5 +1,5 @@
 <template>
-    <div id="dna-ring">
+    <div id="codon-logo">
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			viewBox="0 0 792 775.15" style="enable-background:new 0 0 792 775.15;" xml:space="preserve">
 		<g id="dna">
@@ -568,7 +568,7 @@
 				c51.28,49.48,119.48,76.72,192.03,76.72c72.55,0,140.75-27.25,192.03-76.72c51.22-49.42,79.43-115.1,79.43-184.95
 				c0-69.85-28.21-135.54-79.43-184.95C539.71,153.08,471.51,125.83,398.96,125.83z"/>
 		</g>
-		<g id="main" class="st2">
+		<g id="codon" class="st2">
 			<path class="st3" d="M340.99,190.21c3.08-2.29,4.7-5.62,5.26-7.24c3.36-9.75,14.89-22.14,25.8-27.4
 				c4.85-2.34,23.25-8.79,42.36-3.78c5.17,1.36,15.34,3.86,22.59,13.13c5.71,7.3,6.74,15.09,6.97,18.76
 				c-2.21-3.9-6.87-10.87-15.44-16.4c-10.76-6.94-21.44-7.55-27.41-7.83c-5.59-0.26-15.58-0.71-26.16,4.33
@@ -668,12 +668,10 @@
 </template>
 
 <script>
-	import axios from 'axios';
-
 	var vue;
 
     export default {
-        name   : "Github User",
+        name   : "Codon",
         components: {},
         props: {
 		},
@@ -696,22 +694,6 @@
 </script>
 
 <style  lang="scss" scoped>
-
-    #dna-ring {
-		width : 200px;
-		margin: 0 auto;
-			svg {
-				animation-name           : spin;
-				animation-duration       : 10s;
-				animation-iteration-count: infinite;
-				animation-timing-function: linear;
-			}
-			@keyframes spin {
-				from {transform: rotate(0deg); }
-				to {transform: rotate(360deg);}
-			}
-
-	}
 	.st0{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
 	.st1{fill:#FFFFFF;}
 	.st2{opacity:0.79;}

@@ -11,6 +11,11 @@ let mix = require('laravel-mix');
  |
  */
 
+ mix.options({
+     extractVueStyles: true,
+     globalVueStyles: 'resources/assets/sass/app.scss'
+ })
+
 mix.js('resources/assets/js/app.js', 'public/js')
     .extract(['vue', 'jquery'])
     .version();
@@ -35,7 +40,7 @@ mix.sass('resources/assets/sass/app.scss', 'public/css')
 .sourceMaps()
 .version()
 .browserSync({
-    proxy: 'rescue-agency.lcl:8778',
+    proxy: 'gcodeon.lcl:8778',
     open : false,
     files: [
         'public/**/app.css'

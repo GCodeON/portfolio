@@ -6,7 +6,7 @@
     background-color : $black;
     color            : white;
     overflow         : hidden;
-    padding          : 3rem 10px;
+    // padding          : 3rem 10px;
     border-bottom    : 5px solid get-color(primary);
     @include breakpoint(medium) {
         padding : 5rem 10px;
@@ -45,7 +45,7 @@
                 }
             }
             i {
-                font-size : 20px;
+                font-size : 30px;
                 @include link-color(get-color(primary));
             }
         }

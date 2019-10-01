@@ -4,16 +4,11 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-// require('./bootstrap');
-// var gaEvents      = require('./ga-events.js'),
-//     facebookShare = require('./facebook-share.js'),
-//     ScrollTo      = require('./scroll-to');
-
 window.RSCG = {};
 window.jQuery     = require('jquery');
 window.$          = window.jQuery;
 window.Vue        = require('vue');
-Vue.config.silent = true;
+// Vue.config.silent = true;
 
 require('foundation-sites');
 require('lodash');
@@ -33,7 +28,8 @@ let youtubeModal = require('./youtube-iframe'),
 
 Vue.component('section-wipes', require('./components/SectionWipes.vue'));
 Vue.component('github-user', require('./components/GithubUser.vue'));
-Vue.component('dna-ring', require('./components/DnaRing.vue'));
+Vue.component('codon', require('./components/CodonSVG.vue'));
+Vue.component('logo-loader', require('./components/LogoLoader.vue'));
 
 const app = new Vue({
     el: '#myApp'
