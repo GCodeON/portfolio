@@ -11,7 +11,7 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 .logo-loader {
     width                     : 100vw;

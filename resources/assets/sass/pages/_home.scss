@@ -1,7 +1,9 @@
 body.home {
     @keyframes rotate {
-		to {transform: rotate(360deg);}
-	}
+		to {
+            transform: rotate(360deg);
+        }
+    }
     .github-container {
         #codon-logo {
             width : 200px;
