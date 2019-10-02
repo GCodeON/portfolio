@@ -26,10 +26,11 @@ let youtubeModal = require('./youtube-iframe'),
  */
 
 
-Vue.component('section-wipes', require('./components/SectionWipes.vue'));
-Vue.component('github-user', require('./components/GithubUser.vue'));
-Vue.component('codon', require('./components/CodonSVG.vue'));
+// Vue.component('section-wipes', require('./components/SectionWipes.vue'));
 Vue.component('logo-loader', require('./components/LogoLoader.vue'));
+Vue.component('logo-line-draw', require('./components/LineDraw.vue'));
+Vue.component('logo-svg', require('./components/CodonSVG.vue'));
+Vue.component('github-user', require('./components/GithubUser.vue'));
 
 const app = new Vue({
     el: '#myApp'

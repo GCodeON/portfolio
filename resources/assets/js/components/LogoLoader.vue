@@ -1,6 +1,6 @@
 <template>
     <div class="logo-loader">
-        <codon class="logo"></codon>
+        <logo-line-draw class="logo"></logo-line-draw>
         <div class="bottom-loader">
         </div>
     </div>

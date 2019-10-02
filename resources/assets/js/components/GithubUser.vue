@@ -1,7 +1,7 @@
 <template>
     <div class="github-container">
 		<div class="user">
-			<codon></codon>
+			<logo-svg></logo-svg>
 			<img class="user-image" 
 				:src="user.avatar_url">
 			<br>
