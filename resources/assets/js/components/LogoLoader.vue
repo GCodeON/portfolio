@@ -33,7 +33,7 @@
         top       : 50%;
         position  : absolute;
         display   : block;
-        animation : logo 1s;
+        animation : fade 3s;
         filter    : drop-shadow(0px 2px 16px rgba(0, 0, 0, 0.2));
     }
 
@@ -57,14 +57,12 @@
     }
 }
 
-@keyframes logo {
+@keyframes fade {
     0% {
-        margin-top : -25px;
         opacity    : 0;
     }
 
     100% {
-        margin-top : 0px;
         opacity    : 1;
     }
 }

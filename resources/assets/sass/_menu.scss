@@ -169,7 +169,7 @@ $menu-font-family : $button-font-family;
                     > a {
                         &::after {
                             content      : '';
-                            border-right : 1px solid $dark-gray;
+                            border-right : 1px solid get-color(primary);
                             position     : absolute;
                             right        : 0;
                             height       : 12px;
@@ -306,9 +306,9 @@ $menu-font-family : $button-font-family;
             bottom: 2rem;
         }
 
-        @include breakpoint(large) {
-            transform:  translateX(-175px);
-        }
+        // @include breakpoint(large) {
+        //     transform:  translateX(-175px);
+        // }
     }
 
     ul.sub-menu {
