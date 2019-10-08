@@ -24,5 +24,9 @@
     "node-sass": "^4.10.0",
     "sass-resources-loader": "^2.0.1",
     "scrollmagic": "^2.0.6"
+  },
+  "dependencies": {
+    "vue-flickity": "^1.2.1",
+    "vue-images-loaded": "^1.1.2"
   }
 }

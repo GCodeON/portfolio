@@ -15,6 +15,7 @@ require('lodash');
 require('slick-carousel');
 require('scrollmagic');
 
+
 let youtubeModal = require('./youtube-iframe'),
     slick = require('./slick-custom'),
     menu = require('./menu-custom');
@@ -32,6 +33,7 @@ Vue.component('logo-line-draw', require('./components/LineDraw.vue'));
 Vue.component('logo-svg', require('./components/CodonSVG.vue'));
 Vue.component('github-user', require('./components/GithubUser.vue'));
 Vue.component('footer-component', require('./components/Footer.vue'));
+Vue.component('bottom-slider', require('./components/BottomSlider.vue'));
 
 const app = new Vue({
     el: '#myApp'
