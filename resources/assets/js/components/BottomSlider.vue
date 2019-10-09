@@ -13,10 +13,12 @@
                 v-images-loaded="imagesLoaded">
                 
 				<div class="stack" v-for="(stack, index) in stacks" :key="index">
-					<h2 class="stack-title">
-                        <a href="#" data-text="Portraits">
-                            <span>{{ stack.title }}</span>
-                        </a>
+					<h2 class="stack-title" v-on:click="toggle(index, $event)">
+                        <!-- <a href="#" data-text="Portraits"> -->
+                            <!-- <span> -->
+                                {{ stack.title }}
+                            <!-- </span> -->
+                        <!-- </a> -->
                     </h2>
 					<div class="item" v-for="(item, index) in stack.items" :key="index">
 						<div class="item__content">
@@ -48,27 +50,7 @@
         win = {
             width: window.innerWidth, 
             height: window.innerHeight
-        },
-
-        support = { transitions: Modernizr.csstransitions },
-		// transition end event name
-		transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
-		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
-		onEndTransition = function( el, callback ) {
-			var onEndCallbackFn = function( ev ) {
-				if( support.transitions ) {
-					if( ev.target != this ) return;
-					this.removeEventListener( transEndEventName, onEndCallbackFn );
-				}
-				if( callback && typeof callback === 'function' ) { callback.call(this); }
-			};
-			if( support.transitions ) {
-				el.addEventListener( transEndEventName, onEndCallbackFn );
-			}
-			else {
-				onEndCallbackFn();
-			}
-		}
+        };
     
     export default {
         name       : "BottomSlider",
@@ -85,6 +67,14 @@
                 canOpen         : true,
                 moveHeroImage   : true,
                 isFireFox       : typeof InstallTrigger !== 'undefined',
+                flickityOptions : {
+                    wrapAround      : true,
+                    imagesLoaded    : true,
+                    initialIndex    : 0,
+                    setGallerySize  : false,
+                    pageDots        : false,
+                    prevNextButtons : false
+                },
                 stacks: [
                     {
                         title : "project1",
@@ -123,15 +113,7 @@
                         ]
 
                     },
-                ],
-                flickityOptions : {
-                    wrapAround      : true,
-                    imagesLoaded    : true,
-                    initialIndex    : 0,
-                    setGallerySize  : false,
-                    pageDots        : false,
-                    prevNextButtons : false
-                }
+                ]
             }
         },
         created() {
@@ -166,6 +148,17 @@
             imagesLoaded: () => {
                 console.log("loaded");
                 bodyEl.classList.add('view-init');
+            },
+            toggle: function(index, event) {
+                console.log("title clicked",index, event, event.target.parentElement);
+                event.preventDefault();
+
+                if(this.canOpen) {
+                    console.log("can open after click");
+                    this.moveHeroImage = false;
+                    bodyEl.classList.add('view-full');
+                    bodyEl.classList.add('move-items');
+                }
             }
         },
     };
