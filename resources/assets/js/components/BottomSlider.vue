@@ -6,84 +6,35 @@
 			<div class="hero__front"></div>
 		</div>
 		<div class="stack-slider" ref="stack-slider">
-			<flickity class="stacks-wrapper" ref="stacks-wrapper"  :options="flickityOptions" v-images-loaded="imagesLoaded">
-				<div class="stack">
-					<h2 class="stack-title"><a href="#" data-text="Portraits"><span>Portraits</span></a></h2>
-					<div class="item">
+			<flickity 
+                class="stacks-wrapper" 
+                ref="stacks-wrapper"  
+                :options="flickityOptions" 
+                v-images-loaded="imagesLoaded">
+                
+				<div class="stack" v-for="(stack, index) in stacks" :key="index">
+					<h2 class="stack-title">
+                        <a href="#" data-text="Portraits">
+                            <span>{{ stack.title }}</span>
+                        </a>
+                    </h2>
+					<div class="item" v-for="(item, index) in stack.items" :key="index">
 						<div class="item__content">
-							<img src="img/type1/1.jpg" alt="img01" />
-							<h3 class="item__title">Hoodie stumptown kitsch <span class="item__date">05/05/2015</span></h3>
+							<img :src="item.img" :alt="item.alt" />
+							<h3 class="item__title">
+                                {{ item.title }} 
+                                <span class="item__date">{{ item.subtitle }}</span>
+                            </h3>
 							<div class="item__details">
-								<ul>
-									<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-									<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
-									<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-									<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-									<li><i class="icon icon-iso"></i><span>80</span></li>
-								</ul>
+								{{ item.info }}
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="stack">
-					<h2 class="stack-title"><a href="#" data-text="Landscape"><span>Landscape</span></a></h2>
-					<div class="item">
-						<div class="item__content">
-							<img src="img/type3/1.jpg" alt="img01" />
-							<h3 class="item__title">Austin flannel salvia <span class="item__date">05/05/2015</span></h3>
-							<div class="item__details">
-								<ul>
-									<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-									<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-									<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-									<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-									<li><i class="icon icon-iso"></i><span>80</span></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="stack">
-					<h2 class="stack-title"><a href="#" data-text="Miscellaneous"><span>Miscellaneous</span></a></h2>
-					<div class="item">
-						<div class="item__content">
-							<img src="img/type2/1.jpg" alt="img01" />
-							<h3 class="item__title">Chambray fingerstache <span class="item__date">05/05/2015</span></h3>
-							<div class="item__details">
-								<ul>
-									<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-									<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-									<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-									<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-									<li><i class="icon icon-iso"></i><span>80</span></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="stack">
-					<h2 class="stack-title"><a href="#" data-text="Wildlife"><span>Wildlife</span></a></h2>
-					<div class="item">
-						<div class="item__content">
-							<img src="img/type4/1.jpg" alt="img01" />
-							<h3 class="item__title">Kickstarter keffiyeh <span class="item__date">05/05/2015</span></h3>
-							<div class="item__details">
-								<ul>
-									<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-									<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-									<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-									<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-									<li><i class="icon icon-iso"></i><span>80</span></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
+
 			</flickity>
-			<!-- /stacks-wrapper -->
 		</div>
-		<!-- /stacks -->
-		<img class="loader" src="img/three-dots.svg" width="60" alt="Loader image" />
+		<img class="loader" src="" width="60" alt="Loader image" />
 	</div>
 
 </template>
@@ -134,6 +85,45 @@
                 canOpen         : true,
                 moveHeroImage   : true,
                 isFireFox       : typeof InstallTrigger !== 'undefined',
+                stacks: [
+                    {
+                        title : "project1",
+                        items : [
+                            {
+                                img      : "",
+                                alt      : "",   
+                                title    : "test",
+                                subtitle : "",
+                                info     : ""
+                            }
+                        ]
+
+                    },
+                    {
+                        title : "Project2",
+                        items : [
+                            {
+                                img      : "",
+                                title    : "test",
+                                subtitle : "",
+                                info     : ""
+                            }
+                        ]
+
+                    },
+                    {
+                        title : "Project3",
+                        items : [
+                            {
+                                img      : "",
+                                title    : "test",
+                                subtitle : "",
+                                info     : ""
+                            }
+                        ]
+
+                    },
+                ],
                 flickityOptions : {
                     wrapAround      : true,
                     imagesLoaded    : true,
