@@ -4,9 +4,7 @@
             <div class="logo">
                 <a class="ga-logo home" href="/" data-ga-category="Navigational Clicks" data-ga-action="Click Header"
                    data-ga-label="Logo">
-                    <!-- <img src="/images/logo.svg"  alt="site logo"> -->
-                    <!-- <h5>Gera Soto</h5> -->
-                    <!-- @include ('partials.logo-svg') -->
+                    @include ('partials.logo-svg')
                 </a>
             </div>
         </div>

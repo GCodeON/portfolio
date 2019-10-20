@@ -20,7 +20,7 @@ return [
         ],
         [
             'name' => 'Blog',
-            'url'  => '/about',
+            'url'  => '/blog',
         ]
     ],
     // "sub_menu" => [

@@ -24,8 +24,9 @@ class AppController extends Controller
 
     function home()
     {
-        $data = $this->cms->get('home');
-        return view('home', $data);
+        // $data = $this->cms->get('home');
+        // return view('home', $data);
+        return redirect('/about');
     }
 
     function blog($idOrSlug, BlogRepository $blogRepository) {

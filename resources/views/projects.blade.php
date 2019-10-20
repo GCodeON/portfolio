@@ -2,5 +2,5 @@
 
 @section ('content')
     <!-- <section-wipes></section-wipes> -->
-    <grid></grid>
+    <coverflow></coverflow>
 @stop

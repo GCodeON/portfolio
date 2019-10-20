@@ -1,5 +1,5 @@
 @extends('layouts.site', ['bodyClass' => 'about'])
 
 @section ('content')
-    <!-- <section-wipes></section-wipes> -->
+    <github-user></github-user>
 @stop

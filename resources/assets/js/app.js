@@ -37,7 +37,7 @@ Vue.component('logo-svg', require('./components/CodonSVG.vue'));
 Vue.component('github-user', require('./components/GithubUser.vue'));
 Vue.component('footer-component', require('./components/Footer.vue'));
 Vue.component('bottom-slider', require('./components/BottomSlider.vue'));
-Vue.component('grid', require('./components/Grid.vue'));
+Vue.component('coverflow', require('./components/Carousel3D.vue'));
 
 
 const app = new Vue({

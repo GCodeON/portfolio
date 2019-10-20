@@ -1,26 +1,28 @@
 body.projects {
 
-.grid {
-    &.css-grid {
-        display         : grid;
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-        grid-gap        : 0px 25px;
-        @include breakpoint(medium) {
-            grid-gap    : 25px 25px;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        }
-        @include breakpoint(large) {
-            grid-gap    : 25px 25px;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    .grid {
+        &.css-grid {
+            display         : grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            grid-gap        : 0px 25px;
+            @include breakpoint(medium) {
+                grid-gap    : 25px 25px;
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            }
+            @include breakpoint(large) {
+                grid-gap    : 25px 25px;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
         }
     }
-}
 
-.carousel-3d-controls {
-    span {
-        color: get-color(tertiary);
+    .carousel-3d-controls {
+        span {
+            color: get-color(tertiary);
+        }
     }
-}
 
-
+    #coverflow {
+        transform: translateY(100px);
+    }
 }
