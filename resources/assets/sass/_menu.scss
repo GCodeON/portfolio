@@ -248,7 +248,7 @@ $menu-font-family : $button-font-family;
                 line-height : 1;
             }
             i {
-                font-size : 20px;
+                font-size : 45px;
                 color     : get-color(secondary);
                 transition  : color .5s ease;
                 @include breakpoint(medium) {
@@ -294,9 +294,9 @@ $menu-font-family : $button-font-family;
         }
     }
 
-    // .top-menu {
-    //     margin-top: 5rem;
-    // }
+    .top-menu {
+        margin-top: 5rem;
+    }
 
     .bottom-menu {
         position : absolute;

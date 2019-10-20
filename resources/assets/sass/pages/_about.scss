@@ -19,16 +19,4 @@ body.about {
 
 
     }
-
-    .logo-loader {
-        #codon-logo {
-            svg {
-                animation: rotate 15s infinite linear;
-            }
-        }
-        #codon {
-            display: none;
-        }
-    }
-
 }

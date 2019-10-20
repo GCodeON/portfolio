@@ -1,12 +1,11 @@
 
 .footer {
     width            : 100%;
-    // border-top       : 3px solid get-color(secondary);
     position         : relative;
     background-color : $black;
     color            : white;
     overflow         : hidden;
-    // padding          : 3rem 10px;
+    border-top    : 2px solid get-color(primary);
     border-bottom    : 5px solid get-color(primary);
     @include breakpoint(medium) {
         padding : 5rem 10px;
@@ -14,6 +13,7 @@
 
     @include breakpoint(medium) {
         padding   : 2rem 0;
+        margin-top: 5em;
         font-size : 12px;
     }
 

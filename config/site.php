@@ -18,10 +18,10 @@ return [
             'name' => 'Projects',
             'url'  => '/projects',
         ],
-        [
-            'name' => 'Blog',
-            'url'  => '/blog',
-        ]
+        // [
+        //     'name' => 'Blog',
+        //     'url'  => '/blog',
+        // ]
     ],
     // "sub_menu" => [
     //     [
