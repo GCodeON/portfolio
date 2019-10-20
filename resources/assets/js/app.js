@@ -14,14 +14,13 @@ require('foundation-sites');
 require('lodash');
 require('slick-carousel');
 require('scrollmagic');
-require('granim');
+// require('granim');
 
 
 
 let youtubeModal = require('./youtube-iframe'),
     slick = require('./slick-custom'),
     menu = require('./menu-custom');
-    // Grid = require('./grid');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -74,7 +73,6 @@ function init() {
         menu.bindNavMenu();
         menu.bindFixedMenu('#menu .fixed-header', -100);
         
-        // Grid.init();
         // slick.customSlider();
         // youtubeModal.iframeApi();
     });

@@ -20,6 +20,7 @@
 @include('partials.facebook', ['facebookId' => env('FACEBOOK_APP_ID')])
 
 <div id="myApp">
+    <logo-loader></logo-loader>
     @yield('main')
 </div>
 
