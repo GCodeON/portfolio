@@ -23,20 +23,20 @@ return [
             'url'  => '/about',
         ]
     ],
-    "sub_menu" => [
-        [
-            'name' => 'Data',
-            'url'  => '/data',
-        ],
-        [
-            'name' => 'Software',
-            'url'  => '/software',
-        ],
-        [
-            'name' => 'Design',
-            'url'  => '/design',
-        ]
-    ],
+    // "sub_menu" => [
+    //     [
+    //         'name' => 'Data',
+    //         'url'  => '/data',
+    //     ],
+    //     [
+    //         'name' => 'Software',
+    //         'url'  => '/software',
+    //     ],
+    //     [
+    //         'name' => 'Design',
+    //         'url'  => '/design',
+    //     ]
+    // ],
 
     'admin_menu' => [
         [

@@ -19,11 +19,14 @@
                 @endforeach
             </ul>
             <ul class="hide-for-small-only menu sub-menu desktop-menu">
-                @foreach($subMenu as $item)
-                    <li class="{{$item['class'] or ''}}{{ $item['active'] ? ' active' : '' }}">
-                        <a href="{{$item['url']}}">{{$item['name']}}</a>
-                    </li>
-                @endforeach
+               
+                @if(isset($subMenu))
+                    @foreach($subMenu as $item)
+                        <li class="{{$item['class'] or ''}}{{ $item['active'] ? ' active' : '' }}">
+                            <a href="{{$item['url']}}">{{$item['name']}}</a>
+                        </li>
+                    @endforeach
+                @endif
             </ul>
             <button type="button" data-toggle="mobile-menu fixed-header" class="clear button black mobile-menu-open show-for-small-only">
                 <span>Menu</span>
@@ -82,11 +85,13 @@
             </div>
             <div class="bottom-menu">
                 <ul class="menu sub-menu align-center">
+                @if(isset($subMenu))
                     @foreach($subMenu as $item)
                         <li class="{{$item['class'] or ''}}{{ $item['active'] ? ' active' : '' }}">
                             <a href="{{$item['url']}}">{{$item['name']}}</a>
                         </li>
                     @endforeach
+                @endif
                 </ul>
             </div>
 

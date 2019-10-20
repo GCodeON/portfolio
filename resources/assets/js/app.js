@@ -16,9 +16,11 @@ require('slick-carousel');
 require('scrollmagic');
 
 
+
 let youtubeModal = require('./youtube-iframe'),
     slick = require('./slick-custom'),
-    menu = require('./menu-custom');
+    menu = require('./menu-custom'),
+    Grid = require('./grid');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -34,6 +36,8 @@ Vue.component('logo-svg', require('./components/CodonSVG.vue'));
 Vue.component('github-user', require('./components/GithubUser.vue'));
 Vue.component('footer-component', require('./components/Footer.vue'));
 Vue.component('bottom-slider', require('./components/BottomSlider.vue'));
+Vue.component('grid', require('./components/Grid.vue'));
+
 
 const app = new Vue({
     el: '#myApp'
@@ -69,6 +73,7 @@ function init() {
         menu.bindNavMenu();
         menu.bindFixedMenu('#menu .fixed-header', -100);
         
+        Grid.init();
         // slick.customSlider();
         // youtubeModal.iframeApi();
     });

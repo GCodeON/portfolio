@@ -1,0 +1,36 @@
+{
+    "projects": [
+        {
+            "title" : "Example One",
+            "link"  : "",
+            "img"   : {
+                "src" : "/images/3.jpg",
+                "alt" : "grid"
+            }
+        },
+        {
+            "title" : "Example Two",
+            "link"  : "",
+            "img"   : {
+                "src" : "/images/3.jpg",
+                "alt" : "grid"
+            }
+        },
+        {
+            "title" : "Example Three",
+            "link"  : "",
+            "img"   : {
+                "src" : "/images/3.jpg",
+                "alt" : "grid"
+            }
+        },
+        {
+            "title" : "Example Four",
+            "link"  : "",
+            "img"   : {
+                "src" : "/images/3.jpg",
+                "alt" : "grid"
+            }
+        }
+    ]
+}
