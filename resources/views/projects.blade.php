@@ -1,6 +1,6 @@
 @extends('layouts.site', ['bodyClass' => 'projects'])
 
 @section ('content')
-    <!-- <section-wipes></section-wipes> -->
+    <logo-loader></logo-loader>
     <coverflow></coverflow>
 @stop

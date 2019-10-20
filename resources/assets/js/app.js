@@ -73,6 +73,7 @@ function init() {
         menu.bindNavMenu();
         menu.bindFixedMenu('#menu .fixed-header', -100);
         
+
         // slick.customSlider();
         // youtubeModal.iframeApi();
     });
