@@ -30,7 +30,7 @@
 import { Carousel3d, Slide } from 'vue-carousel-3d';
 
 export default {
-  name       : "grid",
+  name       : "coverflow",
   props      : [],
   components : {
     Carousel3d,
@@ -97,6 +97,7 @@ export default {
   .project {
         background : none;
         border     : none;
+
         .info {
           margin     : 0 auto;
           display    : none;

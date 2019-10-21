@@ -36,7 +36,7 @@ Vue.component('logo-svg', require('./components/CodonSVG.vue'));
 Vue.component('github-user', require('./components/GithubUser.vue'));
 Vue.component('footer-component', require('./components/Footer.vue'));
 Vue.component('bottom-slider', require('./components/BottomSlider.vue'));
-Vue.component('coverflow', require('./components/Carousel3D.vue'));
+Vue.component('cover-flow', require('./components/Coverflow.vue'));
 
 
 const app = new Vue({
@@ -73,9 +73,10 @@ function init() {
         menu.bindNavMenu();
         menu.bindFixedMenu('#menu .fixed-header', -100);
         
-
-        // slick.customSlider();
-        // youtubeModal.iframeApi();
+        AOS.init({
+            duration : 1000,
+            offset   : 200,
+        });
     });
 
 }

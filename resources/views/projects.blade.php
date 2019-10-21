@@ -2,5 +2,5 @@
 
 @section ('content')
     <logo-loader></logo-loader>
-    <coverflow></coverflow>
+    <cover-flow></cover-flow>
 @stop

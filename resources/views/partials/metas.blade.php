@@ -14,4 +14,4 @@
 <meta property="og:title" content="Gerardo Soto"/>
 <meta property="og:description" content="Gerardo Soto gsoto@gcodeon.me"/>
 <meta property="og:image" content=""/>
-<title>GCodeOn</title>
+<title>GCodeOn | Gera Soto</title>
