@@ -63,7 +63,7 @@ export default {
           cheight         : 60,
           autoplay        : true,
           autoplayTimeout : 4000,
-          display         : 3
+          display         : 5
         }
       };
   },
