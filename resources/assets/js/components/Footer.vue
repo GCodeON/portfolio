@@ -28,7 +28,7 @@
 
 							<div class="cell medium-11 small-12 align-self-bottom">
 								<div class="contact-info">
-								<br> gsoto@gcodeon.dev
+								<br> gcodeondev@gmail.com
 								</div>
 								<small class="copyright">
 									Copyright © 2019 GCodeOn <br>All Rights Reserved.

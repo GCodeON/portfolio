@@ -11,7 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta property="og:url" content="{{ env('APP_URL')  }}"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Gerardo Soto"/>
-<meta property="og:description" content="Gerardo Soto | Software Developer"/>
+<meta property="og:title" content="Gerardo Soto | Software Developer"/>
+<meta property="og:description" content="Gerardo Soto | GCodeon | gcodeondev@gmail.com "/>
 <meta property="og:image" content="{{ env('APP_URL')  }}/images/gcodon.png"/>
-<title>GCodeOn | Gera Soto</title>
+<title> Gerardo Soto | GCodeOn</title>
