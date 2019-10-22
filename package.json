@@ -17,7 +17,7 @@
     "foundation-sites": "^6.4.4-rc1",
     "jquery": "^3.2",
     "laravel-mix": "^1.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "motion-ui": "^2.0.3",
     "slick-carousel": "^1.8.1",
     "vue": "^2.5.7",
