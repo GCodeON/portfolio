@@ -94,17 +94,17 @@ i {
     right    : 0;
     bottom   : 0;
     left     : 0;
+}
 
-    #gradient {
-        position            : absolute;
-        width               : 100%;
-        height              : 100%;
-        z-index             : -1;
-        background-size     : cover;
-        // @include breakpoint(medium) {
-        //     min-height: 900px;
-        // }
-    }
+#gradient {
+    position            : absolute;
+    width               : 100%;
+    height              : 100%;
+    z-index             : -1;
+    background-size     : cover;
+    // @include breakpoint(medium) {
+    //     min-height: 900px;
+    // }
 }
 
 .content {

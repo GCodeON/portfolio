@@ -31,7 +31,7 @@
 								<br> gcodeondev@gmail.com
 								</div>
 								<small class="copyright">
-									Copyright © 2019 GCodeOn <br>All Rights Reserved.
+									Copyright © 2020 GCodeOn <br>All Rights Reserved.
 								</small>
 							</div>
 						</div>
@@ -62,7 +62,7 @@
     };
 </script>
 
-<style lang = "scss" scoped>
+<style lang="scss" scoped>
 
   
 </style>

@@ -6,9 +6,23 @@
 				:src="user.avatar_url">
 			<br>
 			<div class="details" data-aos="zoom-in">
-				<!-- <p class="username">{{ user.name }}</p>
-				<p>{{ user.login }}</p> -->
-				<!-- <p>{{ user.bio }}</p> -->
+				<h5 class="username">{{ user.name }}</h5>
+				<!-- <p>{{ user.login }}</p>
+				<p>{{ user.bio }}</p> -->
+				<div class="links">
+					<ul class="menu icons">
+						<li id="dark-state">
+							<a href="https://github.com/GCodeON" target="_blank">
+								<i class="fab fa-github"></i>
+							</a>
+						</li>
+						<li id="light-state">
+							<a href="https://www.linkedin.com/in/gerardo-soto-becerra/" target="_blank">
+								<i class="fab fa-linkedin"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<cover-flow></cover-flow>
@@ -34,7 +48,9 @@
 			vue = this;
             return {
 				data: {},
-				user: {}
+				user: {
+					email: 'gcodeondev@gmail.com'
+				}
             };
         },
         created() {
@@ -78,6 +94,20 @@
 			}
 		}
 
+		.links {
+			display        : inline-block;
+			vertical-align : middle;
+			max-width      : 100%;
+			height         : auto;
+
+			li {
+				font-size: 2em;
+
+				i {
+					color: white;
+				}
+			}
+		}
 
 		.user-image {
 			    border-radius : 100px;
