@@ -86,5 +86,32 @@ i {
     }
 }
 
+ #canvas-wrapper {
+    position : absolute;
+    width    : 100%;
+    height   : 100%;
+    top      : 0;
+    right    : 0;
+    bottom   : 0;
+    left     : 0;
+
+    #gradient {
+        position            : absolute;
+        width               : 100%;
+        height              : 100%;
+        z-index             : -1;
+        background-size     : cover;
+        // @include breakpoint(medium) {
+        //     min-height: 900px;
+        // }
+    }
+}
+
+.content {
+    @include breakpoint(medium) {
+        transform: translate(0, -100px);
+    }
+}
+
 
 

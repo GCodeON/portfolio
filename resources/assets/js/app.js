@@ -20,7 +20,8 @@ require('scrollmagic');
 
 let youtubeModal = require('./youtube-iframe'),
     slick = require('./slick-custom'),
-    menu = require('./menu-custom');
+    menu = require('./menu-custom'),
+    gradient = require('./gradient');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -77,6 +78,8 @@ function init() {
             duration : 1000,
             offset   : 200,
         });
+
+        gradient.init();
     });
 
 }

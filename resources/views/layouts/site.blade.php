@@ -8,6 +8,8 @@
         @yield('content')
     </div>
 
+    @yield('footer')
+
 
 @stop
 

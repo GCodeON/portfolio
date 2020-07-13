@@ -5,13 +5,13 @@
 			<img class="user-image" 
 				:src="user.avatar_url">
 			<br>
-			<div class="details">
-				<p class="username">{{ user.name }}</p>
-				<p>{{ user.login }}</p>
-				<p>{{ user.bio }}</p>
+			<div class="details" data-aos="zoom-in">
+				<!-- <p class="username">{{ user.name }}</p>
+				<p>{{ user.login }}</p> -->
+				<!-- <p>{{ user.bio }}</p> -->
 			</div>
-			<footer-component></footer-component>
 		</div>
+		<cover-flow></cover-flow>
 	</div>
 </template>
 
@@ -63,25 +63,38 @@
 <style  lang="scss" scoped>
 
 	.github-container {
-		text-align: center;
-		position  : relative;
+		text-align : center;
+		position   : relative;
+
+		#codon-logo {
+            width  : 120px;
+            margin : 0 auto;
+        }
+		svg {
+			animation : rotate 10s infinite linear;
+	
+			#codon {
+				display : none;
+			}
+		}
+
 
 		.user-image {
-			    border-radius: 100px;
-			    width        : 125px;
-			    z-index      : 2;
-			    position     : absolute;
-			    left         : 0;
-			    top          : 36px;
-			    right        : 0;
-			    bottom       : 0;
-				margin       : 0 auto;
+			    border-radius : 100px;
+			    width         : 75px;
+			    z-index       : 2;
+			    position      : absolute;
+			    left          : 0;
+			    top           : 21px;
+			    right         : 0;
+			    bottom        : 0;
+			    margin        : 0 auto;
 		}
 		.details {
-			width: 300px;
+			width  : 300px;
 			margin : 0 auto;
 			.username {
-				text-transform: uppercase;
+				text-transform : uppercase;
 			}
 		}
 	}    
