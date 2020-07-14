@@ -1,19 +1,19 @@
 {
     "projects": [
         {
-            "title" : "Shotsfired",
-            "link"  : "https://shotsfiredbattle.net/",
-            "img"   : {
-                "src" : "/images/shotsfired-shopify.png",
-                "alt" : "shotsfiredbattle.net"
-            }
-        },
-        {
             "title" : "Softstack Factory",
             "link"  : "https://softstack-factory.herokuapp.com/",
             "img"   : {
                 "src" : "/images/softstack.png",
                 "alt" : "softstackfactory"
+            }
+        },
+        {
+            "title" : "Shotsfired",
+            "link"  : "https://shotsfiredbattle.net/",
+            "img"   : {
+                "src" : "/images/shotsfired-shopify.png",
+                "alt" : "shotsfiredbattle.net"
             }
         },
         {
