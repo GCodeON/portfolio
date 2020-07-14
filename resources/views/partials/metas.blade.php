@@ -13,5 +13,5 @@
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="Gerardo Soto | Software Developer"/>
 <meta property="og:description" content="Gerardo Soto | GCodeon | gcodeondev@gmail.com "/>
-<meta property="og:image" content="{{ env('APP_URL')  }}/images/gcodon.png"/>
+<meta property="og:image" content="{{ env('APP_URL')  }}/images/codon-white.png"/>
 <title> Gerardo Soto | GCodeOn</title>
