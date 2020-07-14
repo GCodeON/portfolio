@@ -7,6 +7,7 @@
 			<br>
 			<div class="details" data-aos="zoom-in">
 				<h5 class="username">{{ user.name }}</h5>
+				<p>Full Stack Web Developer</p>
 				<!-- <p>{{ user.login }}</p>
 				<p>{{ user.bio }}</p> -->
 				<div class="links">
