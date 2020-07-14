@@ -15,7 +15,7 @@
         v-for="(item, i) in projects" 
         :index="i" :key="i" 
         @click="goToSlide(i)">
-        <img :src="item.img.src" :alt="item.img.alt">
+        <img class="imgSlide" :src="item.img.src" :alt="item.img.alt">
           <div class="info" @click="openLink(item)">
             <h4 class="title" data-aos="zoom-in">{{ item.title }} </h4>
             <h6>{{ item.link }} </h6>
@@ -101,6 +101,12 @@ export default {
         background : none;
         border     : none;
 
+        &:hover {
+          cursor: grab;
+        }
+        &:active {
+          cursor: grabbing;
+        }
 
         .info {
           margin     : 0 auto;
