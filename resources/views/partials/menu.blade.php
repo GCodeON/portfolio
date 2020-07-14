@@ -95,7 +95,7 @@
 
             <div class="share-icons">
                 <div class="menu-label show-for-medium">
-                    <span class="vertical-rl">Follow us</span>
+                    <span class="vertical-rl">Links</span>
                     <hr class="vertical">
                 </div>
                 <ul class="menu icons align-center">
