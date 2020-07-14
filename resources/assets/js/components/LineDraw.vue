@@ -116,12 +116,12 @@
 				lines;
 
 			lines = $('.path');
-			console.log("line", lines);
+			// console.log("line", lines);
 
 			for(var i = 0; i < lines.length; i++) {
-				console.log(lines[i].getTotalLength());
+				// console.log(lines[i].getTotalLength());
 			}
-			console.log("totals", lineTotal);
+			// console.log("totals", lineTotal);
         },
         computed: {},
         watch: {},

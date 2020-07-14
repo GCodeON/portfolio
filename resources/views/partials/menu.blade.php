@@ -9,14 +9,14 @@
             </div>
         </div>
         <div class="title-bar-right">
-            <ul class="hide-for-small-only menu desktop-menu">
+            <!-- <ul class="hide-for-small-only menu desktop-menu">
                 @foreach($menu as $item)
                     <li class="{{$item['class'] or ''}}{{ $item['active'] ? ' active' : '' }}">
                         <a href="{{$item['url']}}">{{$item['name']}}</a>
                     </li>
                 @endforeach
-            </ul>
-            <ul class="hide-for-small-only menu sub-menu desktop-menu">
+            </ul> -->
+            <!-- <ul class="hide-for-small-only menu sub-menu desktop-menu">
                
                 @if(isset($subMenu))
                     @foreach($subMenu as $item)
@@ -25,8 +25,8 @@
                         </li>
                     @endforeach
                 @endif
-            </ul>
-            <button type="button" data-toggle="mobile-menu fixed-header" class="clear button black mobile-menu-open show-for-small-only">
+            </ul> -->
+            <button type="button" data-toggle="mobile-menu fixed-header" class="clear button black mobile-menu-open">
                 <span>Menu</span>
             </button>
         </div>

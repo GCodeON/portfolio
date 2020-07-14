@@ -139,22 +139,19 @@ module.exports = {
 
 				'dark-state': {
 					gradients: [
-						['#b9bdbd', '#fd746c' ],
 						['#000', '#1D976C']
 					]
 				},
 
 				'light-state': {
 					gradients: [
-						['#000', '#8E54E9'],
-						['#000428', '#004e92'],
+						['#000', '#0077b5'],
 					]
 				},
 
-				'green-state': {
+				'menu': {
 					gradients: [
-						['#134E5E', '#71B280'],
-						['#93F9B9', '#1D976C']
+						['#3a7bd5', '#000'],
 					]
 				}
 				
@@ -180,9 +177,9 @@ module.exports = {
 				}
 			);
 
-			$('#green-state').hover(
+			$('.mobile-menu-open').hover(
 				function() {
-					backgroundGradient.changeState('green-state')
+					backgroundGradient.changeState('menu')
 				},
 				function() {
 					backgroundGradient.changeState('default-state')

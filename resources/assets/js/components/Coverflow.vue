@@ -15,10 +15,10 @@
         v-for="(item, i) in projects" 
         :index="i" :key="i" 
         @click="goToSlide(i)">
-          <img :src="item.img.src" :alt="item.img.alt">
-          <div class="info">
-            <h4 class="title">{{ item.title }} </h4>
-            <hr>
+        <img :src="item.img.src" :alt="item.img.alt">
+          <div class="info" @click="openLink(item)">
+            <h4 class="title" data-aos="zoom-in">{{ item.title }} </h4>
+            <h6>{{ item.link }} </h6>
           </div>
       </slide>
 
@@ -62,7 +62,7 @@ export default {
           cwidth          : 30,
           cheight         : 60,
           autoplay        : true,
-          autoplayTimeout : 4000,
+          autoplayTimeout : 5000,
           display         : 5
         }
       };
@@ -78,7 +78,10 @@ export default {
      
     },
     goToSlide(index) {
-      this.$refs.mycarousel.goSlide(index)
+      this.$refs.mycarousel.goSlide(index);
+    },
+    openLink(item) {
+      window.open(item.link, '_blank')
     }
   }
 }
@@ -98,13 +101,21 @@ export default {
         background : none;
         border     : none;
 
+
         .info {
           margin     : 0 auto;
           display    : none;
           text-align : center;
+
+                  
+          &:hover {
+            cursor: pointer;
+          }
           hr {
             border-bottom-color : get-color(primary);
-            width               : 100px;
+            width               : 75px;
+            padding             : 10px;
+
           }
         }
         &.current {

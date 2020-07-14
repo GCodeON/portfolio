@@ -1,67 +1,43 @@
 {
     "projects": [
         {
-            "title" : "Softstack Factory",
-            "link"  : "",
-            "img"   : {
-                "src" : "/images/softstack.png",
-                "alt" : "grid"
-            }
-        },
-        {
             "title" : "Shotsfired",
-            "link"  : "",
+            "link"  : "https://shotsfiredbattle.net/",
             "img"   : {
-                "src" : "/images/shotsfired.png",
-                "alt" : "grid"
-            }
-        },
-        {
-            "title" : "Share the Air",
-            "link"  : "",
-            "img"   : {
-                "src" : "/images/sharetheair.png",
-                "alt" : "grid"
-            }
-        },
-        {
-            "title" : "Rescue Agency",
-            "link"  : "",
-            "img"   : {
-                "src" : "/images/rescue.png",
-                "alt" : "grid"
+                "src" : "/images/shotsfired-shopify.png",
+                "alt" : "shotsfiredbattle.net"
             }
         },
         {
             "title" : "Softstack Factory",
-            "link"  : "",
+            "link"  : "https://softstack-factory.herokuapp.com/",
             "img"   : {
                 "src" : "/images/softstack.png",
-                "alt" : "grid"
+                "alt" : "softstackfactory"
             }
         },
         {
-            "title" : "Shotsfired",
-            "link"  : "",
+            "title" : "OseasV",
+            "link"  : "https://oseasv.com/",
             "img"   : {
-                "src" : "/images/shotsfired.png",
-                "alt" : "grid"
+                "src" : "/images/oseasv.png",
+                "alt" : "oseasv"
             }
         },
         {
             "title" : "Share the Air",
-            "link"  : "",
+            "link"  : "https://sharetheairva.com/",
             "img"   : {
                 "src" : "/images/sharetheair.png",
-                "alt" : "grid"
+                "alt" : "sharetheair"
             }
         },
         {
             "title" : "Rescue Agency",
-            "link"  : "",
+            "link"  : "https://rescueagency.com/",
             "img"   : {
                 "src" : "/images/rescue.png",
-                "alt" : "grid"
+                "alt" : "rescueagency"
             }
         }
     ]
